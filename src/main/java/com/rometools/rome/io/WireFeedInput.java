@@ -350,6 +350,15 @@ public class WireFeedInput {
                 // ignore
             }
 
+            try {
+                parser.setFeature("http://apache.org/xml/features/disallow-doctype-decl" , true);
+                saxBuilder.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true);
+            } catch (final SAXNotRecognizedException e) {
+                // ignore
+            } catch (final SAXNotSupportedException e) {
+                // ignore
+            }
+
         } catch (final JDOMException e) {
             throw new IllegalStateException("JDOM could not create a SAX parser");
         }
