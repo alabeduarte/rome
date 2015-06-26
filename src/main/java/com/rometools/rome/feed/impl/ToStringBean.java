@@ -16,7 +16,6 @@
  */
 package com.rometools.rome.feed.impl;
 
-import java.beans.PropertyDescriptor;
 import java.io.Serializable;
 import java.lang.reflect.Array;
 import java.lang.reflect.Method;
@@ -27,6 +26,7 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.Stack;
 
+import com.rometools.rome.feed.impl.beans.PropertyDescriptor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
